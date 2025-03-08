@@ -98,6 +98,7 @@ public class FindLocators {
         WebElement element10 = driver.findElement(By.cssSelector("[alt='Picture of $25 Virtual Gift Card'r]"));
         System.out.println(element10.getText());
 
+
     }
 
 }
