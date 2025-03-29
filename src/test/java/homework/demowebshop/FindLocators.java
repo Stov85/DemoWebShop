@@ -23,7 +23,6 @@ public class FindLocators {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         JavascriptExecutor jse = (JavascriptExecutor) driver;
         jse.executeScript("document.body.style.zoom='70%'");
-
     }
 
     @AfterMethod

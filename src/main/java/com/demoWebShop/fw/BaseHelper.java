@@ -13,7 +13,6 @@ public class BaseHelper {
     public boolean   isElementPresent(By locator){
         return driver.findElements(locator).size()>0;
     }
-
     public void click(By locator){
         driver.findElement(locator).click();
     }

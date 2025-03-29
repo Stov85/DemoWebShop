@@ -23,11 +23,9 @@ public class ApplicationManager {
     public void stop() {
         driver.quit();
     }
-
     public AddItemToCartHelper getItem() {
         return item;
     }
-
     public UserHelper getUser() {
         return user;
     }

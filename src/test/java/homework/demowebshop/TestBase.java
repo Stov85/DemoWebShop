@@ -20,5 +20,4 @@ protected ApplicationManager app = new ApplicationManager();
         app.stop();
     }
 
-
 }

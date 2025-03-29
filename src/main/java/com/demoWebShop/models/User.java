@@ -11,7 +11,6 @@ public class User {
         this.firstName = firstName;
         return this;
     }
-
     public User setLastName(String lastName) {
         this.lastName = lastName;
         return this;

@@ -8,7 +8,6 @@ public class AddItemToCartHelper extends BaseHelper {
     public AddItemToCartHelper(WebDriver driver) {
         super(driver);
     }
-
     public void addItemInCart() {
         click(By.cssSelector(".header-menu .top-menu [href='/computers']"));
         click(By.cssSelector("[alt='Picture for category Desktops']"));

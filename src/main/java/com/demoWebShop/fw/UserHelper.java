@@ -51,7 +51,6 @@ public void clickOnContinueButton(){
         type(By.xpath("//*[@id='Email']"),user.getEmail());
         type(By.xpath("//*[@id='Password']"),user.getPassword());
     }
-
     public void clickOnLoginButton() {
         click(By.xpath("//*[@class='button-1 login-button']"));
     }

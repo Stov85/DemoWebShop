@@ -11,9 +11,7 @@ public class AddItemToCartTests extends TestBase {
         app.getUser().clickOnLoginLink();
         app.getUser().fillLoginForm(new User().setEmail("boom123456@gmail.com").setPassword("Boom321$"));
         app.getUser().clickOnLoginButton();
-
     }
-
     @Test
     public void addToCartItemsTest() {
         app.getItem().addItemInCart();
