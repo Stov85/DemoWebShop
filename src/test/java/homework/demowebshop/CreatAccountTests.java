@@ -1,16 +1,18 @@
 package homework.demowebshop;
 
+import com.demoWebShop.models.User;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class CreatAccountTests extends TestBase {
     @Test
     public void registrationPositiveTest() {
-        clickOnRigisterLink();
-        fillRegistrationForm("Robert", "McPherson",
-                "boom1234@gmail.com", "Boom321$", "Boom321$");
-        clickRegisterButton();
-        Assert.assertTrue(isLogOutButtonPresent());
+        app.getUser().clickOnRigisterLink();
+        app.getUser().fillRegistrationForm(new User().setFirstName("Robert").setLastName( "McPherson").setEmail(
+                "boom123456@gmail.com").setPassword( "Boom321$").setConfirmPassword( "Boom321$"));
+        app.getUser().clickRegisterButton();
+        app.getUser().clickOnContinueButton();
+        Assert.assertTrue(app.getUser().isLogOutButtonPresent());
     }
 
 }
