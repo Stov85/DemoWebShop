@@ -35,6 +35,7 @@ public void clickOnContinueButton(){
 
     }
 
+
     public boolean isLogOutButtonPresent(){
             return isElementPresent(By.xpath("//*[@href='/logout']"));
     }
@@ -53,5 +54,10 @@ public void clickOnContinueButton(){
     }
     public void clickOnLoginButton() {
         click(By.xpath("//*[@class='button-1 login-button']"));
+    }
+    public void login() {
+        clickOnLoginLink();
+        fillLoginForm(new User().setEmail("boom123456@gmail.com").setPassword("Boom321$"));
+        clickOnLoginButton();
     }
 }
